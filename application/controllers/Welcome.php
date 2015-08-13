@@ -22,11 +22,11 @@ class Welcome extends CI_Controller {
 	{
 		if (!$this->session->has_userdata('is-logged-in') || $this->session->userdata('is-logged-in') === FALSE)
 		{
-			redirect('https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=https://ccompera.herokuapp.com/index.php/authorize/get_code&response_type=code', 'refresh');
+			redirect('https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=http://myapp-ccompera.c9.io/index.php/Authorize/get_code&response_type=code', 'refresh');
 		}
 		else
 		{
-			redirect('index.php/carte');
+			redirect('Carte');
 		}
 	}
 }

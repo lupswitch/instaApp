@@ -9,9 +9,6 @@ class Authorize extends CI_Controller {
 
 	function index()
 	{
-		
-		echo '<h1>Authorize</h1>';		
-		
 	}
 	
 	/*
@@ -20,7 +17,7 @@ class Authorize extends CI_Controller {
 	function get_code() {
 
 		// Load the User model
-		$this->load->model('user');
+		$this->load->model('User');
 	
 		// Make sure that there is a GET variable of code
 		if(isset($_GET['code']) && $_GET['code'] != '') {
@@ -29,7 +26,7 @@ class Authorize extends CI_Controller {
 			if ($this->session->has_userdata('is-logged-in') && $this->session->userdata('is-logged-in') === TRUE)
 			{
 				/* DEBUG : ?><h2><?php echo "Je suis deja log !!"; ?></h2><?php */
-				redirect('index.php/carte');
+				redirect('Carte');
 				return ;
 			}
 			// Set up session variables containing some useful Instagram data
@@ -41,15 +38,15 @@ class Authorize extends CI_Controller {
 			$this->session->set_userdata('welcomed', FALSE);
 
 			// Create a user if needed and a log in the database
-			$this->user->login();
+			$this->User->login();
 			/* DEBUG : ?><h2><?php echo "J'ai fait plein de trucs"; ?></h2><?php */
-			redirect('index.php/carte');
+			redirect('Carte');
 
 		} else {
 			
 			// There was no GET variable so erase all session data that might be here and redirect back to the homepage
-			$this->user->logout();
-			redirect('index.php/welcome');
+			$this->User->logout();
+			redirect('Welcome');
 		}
 	}
 }

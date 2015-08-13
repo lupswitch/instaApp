@@ -12,8 +12,8 @@
 $config['instagram_client_name']	= 'myApp';
 $config['instagram_client_id']		= 'af54f552f52e411aa2ec47903b272c93';
 $config['instagram_client_secret']	= 'ed17348caa25458c9f59e35b971b910d';
-$config['instagram_callback_url']	= 'https://ccompera.herokuapp.com/index.php/authorize/get_code';
-$config['instagram_website']		= 'https://ccompera.herokuapp.com/';
+$config['instagram_callback_url']	= 'http://myapp-ccompera.c9.io/index.php/Authorize/get_code';
+$config['instagram_website']		= 'http://myapp-ccompera.c9.io/';
 $config['instagram_description']	= '';
 
 /**

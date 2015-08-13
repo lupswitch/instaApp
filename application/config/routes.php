@@ -49,11 +49,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
 $route['default_controller'] = 'welcome';
 $route['authorize'] = 'authorize';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 /*
 **	LINK TO MY INSTAGRAM AUTHENTIFICATION PAGE
-**	https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=https://ccompera.herokuapp.com/index.php/authorize/get_code&response_type=code
+**	https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=https://myapp-ccompera.c9.io/index.php/authorize/get_code&response_type=code
 */

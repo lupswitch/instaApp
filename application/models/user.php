@@ -52,7 +52,7 @@ class User extends CI_Model {
      {
           $loc = explode(';', $loc);
           if (empty($loc) || "" === $loc[0] || "" === $loc[1])
-               redirect('logout');
+               redirect('Logout');
           else
           {
                $data = array(

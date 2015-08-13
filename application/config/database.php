@@ -64,11 +64,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'ec2-54-204-3-200.compute-1.amazonaws.com',
-	'username' => 'fnpqjvlkktiufi',
-	'password' => 'ZStt7x1i4VS4dVzXQvENaHT0TS',
-	'database' => 'dftqevrtvkbn1d',
-	'dbdriver' => 'postgre',
+	'hostname' => getenv('IP'),
+	'username' => getenv('C9_USER'),
+	'password' => '',
+	'database' => 'myapp',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
@@ -82,5 +82,5 @@ $db['default'] = array(
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE,
-	'port' => '5432'
+	'port' => '3306'
 );

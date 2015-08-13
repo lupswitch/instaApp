@@ -107,7 +107,7 @@ google.setOnLoadCallback(mapInit);
 </head>
 <body>
 	<div id="map"></div>
-	<div id="logout"><a href="logout">Logout</a></div>
-	<div style="display:none" onclick="logout"><iframe src="https://instagram.com/accounts/logout/" width="0" height="0"></iframe></div>
+	<div id="logout"><a href="Logout">Logout</a></div>
+	<div style="display:none" onclick="Logout"><iframe src="https://instagram.com/accounts/logout/" width="0" height="0"></iframe></div>
 </body>
 </html

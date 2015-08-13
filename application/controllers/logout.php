@@ -10,8 +10,8 @@ class Logout extends CI_Controller {
 
 	function index()
 	{
-		$this->load->model('user');
-		$this->user->logout();
-		redirect('https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=https://ccompera.herokuapp.com/index.php/authorize/get_code&response_type=code', 'refresh');
+		$this->load->model('User');
+		$this->User->logout();
+		redirect('https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=http://myapp-ccompera.c9.io/index.php/Authorize/get_code&response_type=code', 'refresh');
 	}
  }
