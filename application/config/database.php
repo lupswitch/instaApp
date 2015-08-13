@@ -65,7 +65,7 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
+	'username' => 'ccompera',
 	'password' => '',
 	'database' => 'myapp',
 	'dbdriver' => 'postgre',
@@ -81,5 +81,6 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE
+	'save_queries' => TRUE,
+	'port' => 5432
 );
