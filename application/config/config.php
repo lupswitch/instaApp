@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'mypath';
+$config['base_url'] = 'http://aqueous-ridge-3853.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------

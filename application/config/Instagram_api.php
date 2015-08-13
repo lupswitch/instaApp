@@ -10,10 +10,10 @@
 */
 
 $config['instagram_client_name']	= 'myApp';
-$config['instagram_client_id']		= 'myclientid';
-$config['instagram_client_secret']	= 'myclientsecretkey';
-$config['instagram_callback_url']	= 'mypath/index.php/authorize/get_code';
-$config['instagram_website']		= 'mypath';
+$config['instagram_client_id']		= 'af54f552f52e411aa2ec47903b272c93';
+$config['instagram_client_secret']	= 'ed17348caa25458c9f59e35b971b910d';
+$config['instagram_callback_url']	= 'http://aqueous-ridge-3853.herokuapp.com/index.php/authorize/get_code';
+$config['instagram_website']		= 'http://aqueous-ridge-3853.herokuapp.com';
 $config['instagram_description']	= '';
 
 /**
