@@ -12,6 +12,6 @@ class Logout extends CI_Controller {
 	{
 		$this->load->model('user');
 		$this->user->logout();
-		redirect('https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=http://aqueous-ridge-3853.herokuapp.com/index.php/authorize/get_code&response_type=code', 'refresh');
+		redirect('https://api.instagram.com/oauth/authorize/?client_id=af54f552f52e411aa2ec47903b272c93&redirect_uri=https://ccompera.herokuapp.com/index.php/authorize/get_code&response_type=code', 'refresh');
 	}
  }
