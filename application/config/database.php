@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'ccompera',
-	'password' => 'foufure',
-	'database' => 'myapp',
+	'hostname' => 'ec2-54-204-3-200.compute-1.amazonaws.com',
+	'username' => 'fnpqjvlkktiufi',
+	'password' => 'ZStt7x1i4VS4dVzXQvENaHT0TS',
+	'database' => 'dftqevrtvkbn1d',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
